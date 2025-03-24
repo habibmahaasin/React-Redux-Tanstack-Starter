@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.ant-image-mask {
+  border-radius: 0.8rem;
+}

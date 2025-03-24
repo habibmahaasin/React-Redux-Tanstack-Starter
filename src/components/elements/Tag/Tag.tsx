@@ -20,8 +20,9 @@ const Tag: React.FC<TagProps> = ({
       closable={closable}
       onClose={onClose}
       style={{
-        padding: "2px 16px",
+        padding: "0px 16px",
         borderRadius: 18,
+        fontSize: 10,
       }}
     >
       {children}

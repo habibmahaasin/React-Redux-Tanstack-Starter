@@ -32,25 +32,21 @@ const Card = () => {
             Tag Blue
           </Tag>
         </Flex>
-        <Carousel arrows infinite={false}>
-          <Image
-            width={"100%"}
-            height={200}
-            style={{ objectFit: "cover" }}
-            src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
-          />
-          <Image
-            width={"100%"}
-            height={200}
-            style={{ objectFit: "cover" }}
-            src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
-          />
-          <Image
-            width={"100%"}
-            height={200}
-            style={{ objectFit: "cover" }}
-            src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
-          />
+        <Carousel
+          arrows
+          infinite={false}
+          className="rounded-xl hover:rounded-xl"
+        >
+          {Array.from({ length: 3 }).map((_, index) => (
+            <Image
+              key={index}
+              width={"100%"}
+              className="rounded-xl"
+              height={200}
+              style={{ objectFit: "cover" }}
+              src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
+            />
+          ))}
         </Carousel>
       </div>
     </AntdCard>
